@@ -7,11 +7,6 @@ namespace GeometriH2
     {
         static void Main(string[] args)
         {
-            Square trapez = new Trapez(3,4,7,7);
-            Square rectangle = new Rectangle(4,6);
-            Square parallelogram = new Parallelogram(4,3,2.2);
-            Shapes rhtriangle = new RightAngledTriangle(4, 4);
-
             List<Shapes> shapes = new List<Shapes>();
             shapes.Add(new Trapez(3, 4, 7, 7));
             shapes.Add(new Rectangle(4, 6));
@@ -23,10 +18,6 @@ namespace GeometriH2
                 Console.WriteLine(shapes[i].Perimeter());
             }
             Console.ReadLine();
-
-            //Console write perimeter of a square
-            //Console.WriteLine(s.Perimeter());
-            //Console.ReadLine();
         }
 
     }
